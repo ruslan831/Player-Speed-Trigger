@@ -1,12 +1,13 @@
-# fifthspeed
-This is where she makes a mod.
+# Player Speed Trigger
+This mod adds a player speed trigger.
 
 <img src="logo.png" width="150" alt="the mod's logo" />
+Available in the level editor, in the trigger tab.
 
-*Update logo.png to change your mod's icon (please)*
+Important!
+Only players with the mod can use the trigger.
 
-## Getting started
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
+This means that if other people try to play your level without the mod, the Player Speed Trigger will be not working and will not make the player speed change
 
 ## Build instructions
 For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
@@ -16,4 +17,8 @@ geode build
 ```
 
 # Resources
-* [Mod Source Code](https://github.com/geode-sdk/geode/)
+* [Geode SDK Documentation](https://docs.geode-sdk.org/)
+* [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
+* [Geode CLI](https://github.com/geode-sdk/cli)
+* [Bindings](https://github.com/geode-sdk/bindings/)
+* [Dev Tools](https://github.com/geode-sdk/DevTools)
