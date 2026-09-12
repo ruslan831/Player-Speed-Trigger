@@ -1,0 +1,26 @@
+{
+	"geode": "5.10.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	
+	"id": "rusmus.player-speed-trigger",
+	"name": "Player Speed Trigger",
+	"version": "v1.0.0",
+	"developer": "RusMus",
+	"description": "This mod adds a player speed trigger.",
+		"resources": {
+		"spritesheets": {
+			"BigPortalSheet": [
+				"res/*.png"
+			]
+		}
+	},
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3",
+	    "smjs.object-collab": ">=0.6.3"
+	}
+}
