@@ -75,19 +75,7 @@ class $modify(PlayerObject){
 
   void updateTimeMod(float speed, bool noParticle) {
        m_playerSpeed = speed;
-    if (speed == 1.0f) {
-        m_yStart = 11.1800318;
-        m_gravity = 0.958199024;
-        m_speedMultiplier = 5.77000189;
-   }     else if (speed  == 1.2f) {
-        m_yStart = 11.420032;
-       m_gravity = 0.957199;
-        m_speedMultiplier = 5.870002;
-   } else if (speed == 1.4f || speed == 1.5f) {
-        m_yStart = 11.230032;
-        m_gravity = 0.961199;
-        m_speedMultiplier = 6.000002;
-   } else if (speed > 1.6f) {
+   if (speed > 1.6f) {
         m_yStart = 11.210032;
         m_gravity = 0.970099;
         m_speedMultiplier = 6.000002;
@@ -103,8 +91,6 @@ $on_mod(Loaded) {
         .editorTab(EditorTab::Triggers)
         .construction(ComplexObject::builder()
             .factory(PlayerSpeedTrigger::create)
-            // Sets the custom property on key 150 (Which is not by default saved by EffectGameObject) with a default value of true.
-            // These properties will automate saving, loading & updating values and handling their defaults when no common value can be found in a selection.
             .customProperties({
                 PropertyInterface::from(150, &PlayerSpeedTrigger::m_active, true),
                 PropertyInterface::from(300, &PlayerSpeedTrigger::m_playerspeed, 0),
